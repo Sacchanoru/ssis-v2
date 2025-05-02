@@ -1861,7 +1861,7 @@ public class Home extends javax.swing.JFrame {
             int studentCounter = 0;
 
             String sqldelete = "DELETE FROM COLLEGE WHERE CollegeCode = '" + collegeCodeToDelete + "'";
-            String sqlcheck = "SELECT CollegeCode, COUNT(*) as c FROM student WHERE CollegeCode = ? GROUP BY CollegeCode";
+            String sqlcheck = "SELECT CollegeCode, COUNT(*) as c FROM program WHERE CollegeCode = ? GROUP BY CollegeCode";
 
             try {
                 Class.forName("com.mysql.cj.jdbc.Driver");
