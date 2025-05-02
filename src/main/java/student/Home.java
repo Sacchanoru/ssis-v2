@@ -2333,6 +2333,9 @@ public class Home extends javax.swing.JFrame {
         DefaultTableModel model3 = (DefaultTableModel) jTable3.getModel();
         TableRowSorter<DefaultTableModel> sorter3 = new TableRowSorter<>(model3);
         jTable3.setRowSorter(sorter3);
+        
+        upd_combobox_prog();
+        upd_combobox_student();
     }
     
     private void clearstudent() {
