@@ -1891,12 +1891,6 @@ public class Home extends javax.swing.JFrame {
                         con.close();
                         return;
                     }
-
-                    String updateStudents = "UPDATE program SET CollegeCode = NULL WHERE CollegeCode = ?";
-                    PreparedStatement pstUpdate = con.prepareStatement(updateStudents);
-                    pstUpdate.setString(1, collegeCodeToDelete);
-                    pstUpdate.executeUpdate();
-                    pstUpdate.close();
                 }
 
                 PreparedStatement pst = con.prepareStatement(sqldelete);
